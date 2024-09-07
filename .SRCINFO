@@ -1,7 +1,7 @@
 pkgbase = templ-bin
 	pkgdesc = A language for writing HTML user interfaces in Go.
 	pkgver = 0.2.648
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/a-h/templ
 	arch = x86_64
 	license = MIT
