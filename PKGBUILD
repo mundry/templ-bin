@@ -3,7 +3,7 @@
 # Contributor: Noel Jacob (bun-bin PKGBUILD)
 pkgname=templ-bin
 pkgver=0.2.771
-pkgrel=1
+pkgrel=2
 pkgdesc="A language for writing HTML user interfaces in Go."
 arch=('x86_64')
 url="https://github.com/a-h/templ"
@@ -15,5 +15,8 @@ source_x86_64=("templ-x86-x64-${pkgver}.tar.gz::https://github.com/a-h/templ/rel
 
 package() {
   install -Dm755 "./templ" "${pkgdir}/usr/bin/templ"
+
+  install -Dm0644 README.md "${pkgdir}/usr/share/doc/templ/README.md"
+  install -Dm0644 LICENSE "${pkgdir}/usr/share/licenses/templ/LICENSE"
 }
 
